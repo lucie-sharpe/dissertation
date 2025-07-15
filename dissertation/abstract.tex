@@ -1,3 +1,7 @@
 \begin{abstract}
-    Your abstract goes here. This should be about 2-3 paragraphs summarising the motivation for your project and the main outcomes (software, results, etc.) of your project. 
+Cellular automata (CA) can be a useful tool for modelling physical systems. However, as many CA use two or more dimensional boards the number of calculations needed to find the next state can scale greatly. If these calculations are performed serially, a considerable amount of computation time may be needed. Individual cell calculations in a CA are independent which provides an opportunity for massive parallelism allowing for constant time computation. However, even with the recent rise in core count, processors are not able to fully exploit this potential. This project aims to create an adaptable hardware accelerator for CA that can be directly connected to a RISC-V processor to allow for faster computation of states. Due to the adaptable nature any CA could be implemented. In this project Conway’s Game of Life and Elementary CA were tested.
+
+An FPGA will be used to create the hardware design as they allow for significantly faster development time. The functionality and performance of the accelerator was tested and compared to a software implementation running on the RISC-V core resulting is a significant decrease in clock cycles required to compute the next state. This demonstrative the advantage of having specialised hardware accelerators.
+
+\textbf{Keywords:} Cellular Automata, RISC-V, FPGA, AXI, Accelerator
 \end{abstract}
